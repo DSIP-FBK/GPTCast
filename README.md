@@ -1,4 +1,5 @@
 # GPTCast
-GPTCast model for precipitation nowcasting.
+GPTCast model for precipitation nowcasting:
+https://arxiv.org/abs/2407.02089
 
-Code and paper will be published here soon.
+Code will be published here soon.
