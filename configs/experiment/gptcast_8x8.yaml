@@ -1,0 +1,44 @@
+# @package _global_
+
+defaults:
+  - override /data: miarad.yaml
+  - override /model: gptcast.yaml
+  - override /logger: many_loggers.yaml
+  - override /trainer: gpu.yaml
+
+model:
+  transformer:
+    block_size: 512
+
+  first_stage:
+    ckpt_path: "SET_A_VALID_CHECKPOINT_PATH_FOR_THE_FIRST_STAGE_MODEL_HERE"
+
+# we stack 8 128x128 frames vertically as input:
+# given a downsampling factor of 16 from the fisrt stage model,
+# we end up with a 8x8x8 = 512 token sequence for the transformer.
+data:
+  seq_len: 8
+  stack_seq: v
+  crop: 128
+  smart_crop: True
+  batch_size: 5
+  num_workers: 8
+  # for some reason, pin memory must be disabled to avoid 
+  # a deadlock in the dataloader when using ddp with multiple gpus
+  pin_memory: False 
+
+callbacks:
+  early_stopping:
+    monitor: "val/loss"
+    patience: 100
+  model_checkpoint:
+    monitor: "val/loss"
+    save_top_k: 3
+    save_last: True
+
+trainer:
+  # it is ok to use bf16 precision training for the forecaster
+  # uses less memory and trains much faster with almost no loss in performance
+  precision: bf16-true
+  min_epochs: 30
+  max_epochs: 100

@@ -1,0 +1,20 @@
+_target_: gptcast.models.VAEGANVQ
+n_embed: 1024
+embed_dim: 4
+base_learning_rate: 4.5e-6
+
+aeconfig:
+  in_ch: 1
+  out_ch: 1
+  z_ch: 4
+  hid_ch: 128
+  hid_ch_mult: [ 1,1,2,4,4 ]  # num_down = len(hid_ch_mult)-1
+  num_res_blocks: 2
+  attn_level: [ 4 ]
+  double_z: False
+
+loss:
+  _target_: gptcast.models.components.vaegan.losses.AdversarialVQLoss
+  disc_in_channels: 1
+  disc_start: 50001
+  disc_weight: 0.2

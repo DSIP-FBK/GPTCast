@@ -1,0 +1,37 @@
+# @package _global_
+
+defaults:
+  - override /data: miarad.yaml
+  - override /model: vaeganvq.yaml
+  - override /logger: many_loggers.yaml
+  - override /trainer: gpu.yaml
+
+# if we want to resume training from a checkpoint
+# model:
+#   ckpt_path: /home/gabriele/Documents/fbk/gpt-nowcasting/logs/train/runs/2023-04-22_08-42-41/checkpoints/epoch_009.ckpt
+#   loss:
+#     disc_start: 1
+
+model:
+  # ckpt_path: /home/gabriele/Documents/fbk/gpt-nowcasting/logs/train/runs/2024-02-21_12-00-34/checkpoints/last.ckpt
+  embed_dim: 8
+  aeconfig:
+    z_ch: 8
+  loss:
+    # disc_start: 1
+    pixel_loss: mwae
+    pixelloss_weight: 10.0
+    perceptual_weight: 0.1
+
+# do not use mixed precision training for the VAEGAN model!
+# The competing objectives of the generator and the discriminator
+# can lead to numerical instability and NaNs in the loss.
+# always train and evaluate the model in full precision mode (float32).
+trainer:
+  min_epochs: 30
+  max_epochs: 100
+  # deterministic: true
+  # benchmark: true
+  # detect_anomaly: true
+
+seed: 42

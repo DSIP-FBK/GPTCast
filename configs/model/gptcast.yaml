@@ -1,0 +1,31 @@
+_target_: gptcast.models.GPTCast
+base_learning_rate: 4.5e-6
+
+transformer:
+  _target_: gptcast.models.components.GPT
+  vocab_size: 1024
+  block_size: 1024  # if 1 image is 16x16=256 tokens, with block_size 1024 we can feed up to 4 images as temporal context
+  n_layer: 24
+  n_head: 16
+  n_embd: 1024
+
+first_stage:
+  _target_: gptcast.models.VAEGANVQ
+  ckpt_path: "SET_A_VALID_CHECKPOINT_PATH_FOR_THE_FIRST_STAGE_MODEL_HERE"
+  n_embed: 1024
+  embed_dim: 8
+  base_learning_rate: 4.5e-6
+  freeze_weights: True
+
+  aeconfig:
+    in_ch: 1
+    out_ch: 1
+    z_ch: 8
+    hid_ch: 128
+    hid_ch_mult: [ 1,1,2,4,4 ]  # num_down = len(hid_ch_mult)-1
+    num_res_blocks: 2
+    attn_level: [ 4 ]
+    double_z: False
+
+  loss:
+    _target_: gptcast.models.components.vaegan.losses.DummyLoss

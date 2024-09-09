@@ -1,0 +1,12 @@
+_target_: gptcast.data.MiaradDataModule
+train_tarfile_path: ${paths.data_dir}miarad_training.tar
+train_metadata_path_or_df: ${paths.data_dir}miarad_training.csv
+test_tarfile_path: ${paths.data_dir}miarad_test.tar
+test_metadata_path_or_df: ${paths.data_dir}miarad_test.csv
+clip_and_normalize: [0,60,-1,1]
+seq_len: 1
+stack_seq: null
+crop: 256
+batch_size: 8
+num_workers: 8
+pin_memory: True
