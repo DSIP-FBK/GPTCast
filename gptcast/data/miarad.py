@@ -182,7 +182,7 @@ class Miarad(MiaradDataset):
 
     def preprocess_image(self, arr: np.ma.masked_array):
         image = einops.rearrange(arr.data, 'c h w -> h w c')
-        mask = arr.mask
+        mask = arr.mask.squeeze()
         if self.crop is not None:
             transform = A.Compose([
                 A.RandomCrop(width=self.crop, height=self.crop),
