@@ -54,6 +54,13 @@ Check the notebooks in the [notebooks](notebooks/) folder on how to use the pret
 
 ## Training
 
+To train the model on the original dataset, first run the script in the [data](data/) folder to download the dataset.
+
+```bash
+# download the dataset
+python data/download_data.py
+```
+
 ### Train the VAE
 Train the first stage (the VAE) with one of the following configurations contained in the folder [configs/experiment/](configs/experiment/):
 - [vaeganvq_mae](configs/experiment/vaeganvq_mae.yaml) - Mean Absolute Error loss
