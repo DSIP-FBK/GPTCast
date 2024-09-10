@@ -39,6 +39,9 @@ bash install_python_ubuntu.sh
 
 # create environment with poetry
 bash create_environment.sh
+
+# activate the environment
+source .venv/bin/activate 
 ```
 
 ## Use the pretrained models
