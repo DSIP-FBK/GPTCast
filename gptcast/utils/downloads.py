@@ -30,24 +30,31 @@ PRETRAINED_MODELS = {
 DATASETS = {
     "miarad" : {
         "miarad_test.csv": {
-            "url": "https://zenodo.org/record/13598348/files/miarad_test.csv",
+            "url": "https://zenodo.org/record/13692016/files/miarad_test.csv",
             "byte_size": 812446,
             "md5sum": "5f293592e2760064b652ef7414274eb1",
         },
         "miarad_test.tar": {
-            "url": "https://zenodo.org/record/13598348/files/miarad_test.tar",
+            "url": "https://zenodo.org/record/13692016/files/miarad_test.tar",
             "byte_size": 726865920,
             "md5sum": "f5fa81ae993d7568a99adf45b6766cb7",
         },
         "miarad_training.csv": {
-            "url": "https://zenodo.org/record/13598348/files/miarad_training.csv",
+            "url": "https://zenodo.org/record/13692016/files/miarad_training.csv",
             "byte_size": 4455802,
             "md5sum": "b64551045c1fc4f5f65afec5fa2bdb85",
         },
         "miarad_training.tar": {
-            "url": "https://zenodo.org/record/13598348/files/miarad_training.tar",
+            "url": "https://zenodo.org/record/13692016/files/miarad_training.tar",
             "byte_size": 4894545920,
             "md5sum": "519b02e410620959c02530ffe60bdf46",
+        },
+    },
+    "fts" : {
+        "fts.tar": {
+            "url": "https://zenodo.org/records/13692016/files/fts.tar",
+            "byte_size": 43332034560,
+            "md5sum": "b25b3cbe9b1d5e0f9c077af526148f94",
         },
     }
 }
