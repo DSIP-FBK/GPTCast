@@ -7,7 +7,7 @@
 <a href="https://hydra.cc/"><img alt="Config: Hydra" src="https://img.shields.io/badge/Config-Hydra-89b8cd"></a>
 <a href="https://github.com/ashleve/lightning-hydra-template"><img alt="Template" src="https://img.shields.io/badge/-Lightning--Hydra--Template-017F2F?style=flat&logo=github&labelColor=gray"></a><br>
 [![Paper](http://img.shields.io/badge/paper-arxiv.2407.02089-B31B1B.svg)](https://arxiv.org/abs/2407.02089)
-[![Data](http://img.shields.io/badge/Data-Zenodo-4b44ce.svg)](https://doi.org/10.5281/zenodo.13598348)
+[![Data](http://img.shields.io/badge/Data-Zenodo-4b44ce.svg)](https://doi.org/10.5281/zenodo.13692016)
 [![Models](http://img.shields.io/badge/Models-Zenodo-4b44ce.svg)](https://doi.org/10.5281/zenodo.13594332)
 
 </div>
@@ -24,7 +24,7 @@ Franch, G., Tomasi, E., Wanjari, R., Poli, V., Cardinali, C., Alberoni, P. P., &
 
 <b>preprint</b>: https://arxiv.org/abs/2407.02089
 
-<b>data</b>: https://doi.org/10.5281/zenodo.13598348
+<b>data</b>: https://doi.org/10.5281/zenodo.13692016
 
 <b>models</b>: https://doi.org/10.5281/zenodo.13594332
 
