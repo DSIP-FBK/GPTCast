@@ -6,7 +6,7 @@
 <a href="https://pytorchlightning.ai/"><img alt="Lightning" src="https://img.shields.io/badge/-Lightning-792ee5?logo=pytorchlightning&logoColor=white"></a>
 <a href="https://hydra.cc/"><img alt="Config: Hydra" src="https://img.shields.io/badge/Config-Hydra-89b8cd"></a>
 <a href="https://github.com/ashleve/lightning-hydra-template"><img alt="Template" src="https://img.shields.io/badge/-Lightning--Hydra--Template-017F2F?style=flat&logo=github&labelColor=gray"></a><br>
-[![Paper](http://img.shields.io/badge/paper-arxiv.2407.02089-B31B1B.svg)](https://arxiv.org/abs/2407.02089)
+[![Paper](http://img.shields.io/badge/paper-GMD-B31B1B.svg)](https://gmd.copernicus.org/articles/18/5351/2025/)
 [![Data](http://img.shields.io/badge/Data-Zenodo-4b44ce.svg)](https://doi.org/10.5281/zenodo.13692016)
 [![Models](http://img.shields.io/badge/Models-Zenodo-4b44ce.svg)](https://doi.org/10.5281/zenodo.13594332)
 
@@ -19,10 +19,20 @@
 Code release for the paper <b>"GPTCast: a weather language model for precipitation nowcasting"</b>
 
 ```
-Franch, G., Tomasi, E., Wanjari, R., Poli, V., Cardinali, C., Alberoni, P. P., & Cristoforetti, M. (2024). GPTCast: a weather language model for precipitation nowcasting. arXiv preprint arXiv:2407.02089.
+@Article{gmd-18-5351-2025,
+AUTHOR = {Franch, G. and Tomasi, E. and Wanjari, R. and Poli, V. and Cardinali, C. and Alberoni, P. P. and Cristoforetti, M.},
+TITLE = {GPTCast: a weather language model for precipitation nowcasting},
+JOURNAL = {Geoscientific Model Development},
+VOLUME = {18},
+YEAR = {2025},
+NUMBER = {16},
+PAGES = {5351--5371},
+URL = {https://gmd.copernicus.org/articles/18/5351/2025/},
+DOI = {10.5194/gmd-18-5351-2025}
+}
 ```
 
-<b>preprint</b>: https://arxiv.org/abs/2407.02089
+<b>paper</b>: https://gmd.copernicus.org/articles/18/5351/2025/
 
 <b>data</b>: https://doi.org/10.5281/zenodo.13692016
 
