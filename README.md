@@ -6,7 +6,7 @@
 <a href="https://pytorchlightning.ai/"><img alt="Lightning" src="https://img.shields.io/badge/-Lightning-792ee5?logo=pytorchlightning&logoColor=white"></a>
 <a href="https://hydra.cc/"><img alt="Config: Hydra" src="https://img.shields.io/badge/Config-Hydra-89b8cd"></a>
 <a href="https://github.com/ashleve/lightning-hydra-template"><img alt="Template" src="https://img.shields.io/badge/-Lightning--Hydra--Template-017F2F?style=flat&logo=github&labelColor=gray"></a><br>
-[![Paper](http://img.shields.io/badge/paper-GMD-B31B1B.svg)](https://gmd.copernicus.org/articles/18/5351/2025/)
+[![Paper](http://img.shields.io/badge/paper-GMD-B31B1B.svg)](https://doi.org/10.5194/gmd-18-5351-2025)
 [![Data](http://img.shields.io/badge/Data-Zenodo-4b44ce.svg)](https://doi.org/10.5281/zenodo.13692016)
 [![Models](http://img.shields.io/badge/Models-Zenodo-4b44ce.svg)](https://doi.org/10.5281/zenodo.13594332)
 
@@ -32,7 +32,7 @@ DOI = {10.5194/gmd-18-5351-2025}
 }
 ```
 
-<b>paper</b>: https://gmd.copernicus.org/articles/18/5351/2025/
+<b>paper</b>: [https://gmd.copernicus.org/articles/18/5351/2025/](https://doi.org/10.5194/gmd-18-5351-2025)
 
 <b>data</b>: https://doi.org/10.5281/zenodo.13692016
 
